@@ -1,0 +1,32 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="FOCostCenter">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="FOCostCenter" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							
+							<xs:element type="xs:string" name="lastModifiedOn" minOccurs="0" maxOccurs="unbounded"/>
+							<xs:element type="xs:string" name="startDate" minOccurs="0" maxOccurs="unbounded"/>
+							<xs:element type="xs:string" name="endDate" minOccurs="0" maxOccurs="unbounded"/>
+							<xs:element type="xs:string" name="externalCode" minOccurs="0" maxOccurs="unbounded"/>
+							<xs:element type="xs:string" name="name" minOccurs="0" maxOccurs="unbounded"/>
+							
+							<xs:element type="xs:string" name="cust_Business_new" minOccurs="0" maxOccurs="unbounded"/>
+							<xs:element type="xs:string" name="cust_Business_old" minOccurs="0" maxOccurs="unbounded"/>
+							<xs:element type="xs:string" name="cust_BusinessArea_new" minOccurs="0" maxOccurs="unbounded"/>
+							<xs:element type="xs:string" name="cust_BusinessArea_old" minOccurs="0" maxOccurs="unbounded"/>
+							
+							<xs:element type="xs:string" name="cust_BusinessLine_new" minOccurs="0" maxOccurs="unbounded"/>
+							<xs:element type="xs:string" name="cust_BusinessLine_old" minOccurs="0" maxOccurs="unbounded"/>
+							<xs:element type="xs:string" name="cust_BusinessSubLine_new" minOccurs="0" maxOccurs="unbounded"/>
+							<xs:element type="xs:string" name="cust_BusinessSubLine_old" minOccurs="0" maxOccurs="unbounded"/>
+							
+							
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

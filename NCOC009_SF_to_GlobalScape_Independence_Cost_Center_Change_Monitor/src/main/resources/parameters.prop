@@ -1,0 +1,32 @@
+#
+#Thu Sep 08 12:55:50 UTC 2022
+Location=HXM2
+SFTP_Dir=/SIT2/Outbound/Independence/NCOC009/
+globalscape_dev=globalscape_qa
+To=prakhverma@deloitte.com
+COUNTRY=USA,IND
+SF_Address=https\://api55.sapsf.eu
+Subject=Email Notification from SAP CI-QA \: ${property.INTERFACE_NAME}
+LocationID=HXM2
+EMPLSTATUS=
+SF_OauthCredential_Name=HXM_OAuth2.0
+Call_NCTC067=/NCTC067
+External_Address=/NCOC009
+Interface\ Name=NCOC009_SF to GlobalScape Cost Center Change Monitor
+Enable\ Payload\ Logging=FALSE
+Private\ Key\ Alias=globalscape_qa
+SFTP_address=filetransfer1.deloitte.com
+Timezone=GMT
+Timer=<row><cell>dateType</cell><cell></cell></row><row><cell>timeType</cell><cell></cell></row><row><cell>dayValue</cell><cell></cell></row><row><cell>monthValue</cell><cell></cell></row><row><cell>yearValue</cell><cell></cell></row><row><cell>onWeekly</cell><cell></cell></row><row><cell>onMonthly</cell><cell></cell></row><row><cell>OnEveryMinute</cell><cell></cell></row><row><cell>fromInterval</cell><cell></cell></row><row><cell>toInterval</cell><cell></cell></row><row><cell>timeZone</cell><cell>( UTC 0\:00 ) Greenwich Mean Time(Etc/GMT)</cell></row><row><cell>secondValue</cell><cell>0</cell></row><row><cell>minutesValue</cell><cell></cell></row><row><cell>hourValue</cell><cell></cell></row><row><cell>triggerType</cell><cell>simple</cell></row><row><cell>noOfSchedules</cell><cell>1</cell></row><row><cell>schedule1</cell><cell>fireNow\=true</cell></row>
+User\ Name=USGlobalScapeHXMSVC
+Execution_Manager=/UpdateExecutionManager
+SFTP_name=NCOC009_Pernr.csv
+Address=mail.deloitte.com\:9999
+SFTP_cred=
+Person_Id_External=
+Last_Modified_Date_RunTime=2022-08-01T12\:00\:00Z
+Grouping=20
+AddressMail=mail.deloitte.com\:9999
+From=noreply@hxmqa.com
+Odata_Timeout=10
+SFTP_CCFilename=NCOC009_Cost Center Change Records.csv

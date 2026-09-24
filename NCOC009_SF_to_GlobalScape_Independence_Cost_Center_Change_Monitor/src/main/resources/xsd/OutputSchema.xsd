@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="Employee">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Employee" maxOccurs="unbounded" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+		                    <xs:element name="User_ID"  minOccurs="0"/>
+	                        <xs:element name="Begin_date"  minOccurs="0"/>
+	                        <xs:element name="End_date"  minOccurs="0"/>
+	                        <xs:element name="Cost_Center"  minOccurs="0"/>
+	                        <xs:element name="externalName"  minOccurs="0"/>
+	                        <xs:element name="Scope"  minOccurs="0"/>
+	                        <xs:element name="New_scope_value"  minOccurs="0"/>
+	                        <xs:element name="RuleSet"  minOccurs="0"/>
+	                        <xs:element name="New_rule_value"  minOccurs="0"/>
+	                        <xs:element name="Message"  minOccurs="0"/>
+	                    </xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

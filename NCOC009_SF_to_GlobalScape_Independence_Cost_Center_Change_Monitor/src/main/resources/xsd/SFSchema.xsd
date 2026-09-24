@@ -1,0 +1,88 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="EmpEmployment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="EmpEmployment" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:int" name="personIdExternal"/>
+              <xs:element type="xs:string" name="assignmentClass"/>
+              <xs:element type="xs:string" name="isContingentWorker"/>
+              <xs:element type="xs:int" name="userId"/>
+              <xs:element name="jobInfoNav">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="EmpJob">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="emplStatusNav">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="PicklistOption">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:string" name="externalCode"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element type="xs:string" name="costCenter"/>
+                          <xs:element name="costCenterNav">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="FOCostCenter">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:string" name="externalCode"/>
+                                      <xs:element type="xs:string" name="name"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element type="xs:string" name="countryOfCompany"/>
+                          <xs:element name="employeeClassNav">
+                            <xs:complexType mixed="true">
+                              <xs:sequence>
+                                <xs:element name="PicklistOption" minOccurs="0">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:string" name="externalCode"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="eventNav">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="PicklistOption">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:string" name="externalCode"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element type="xs:short" name="event"/>
+                          <xs:element type="xs:int" name="userId"/>
+                          <xs:element type="xs:dateTime" name="startDate"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
