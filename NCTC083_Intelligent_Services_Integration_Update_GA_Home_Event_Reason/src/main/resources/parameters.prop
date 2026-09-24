@@ -1,0 +1,16 @@
+#
+#Thu Sep 08 13:18:46 UTC 2022
+Mail_Address=mail.deloitte.com\:9999
+Subject=EMail Notification from SAP CI-QA \: ${property.INTERFACE_NAME}
+From=noreply@hxmqa.com
+SF_URL=https\://api55.sapsf.eu
+SF_AUTHENTICATION=OAuth2SAMLBearer
+ENABLE_PAYLOAD_LOGGING=Y
+SEND_EMAIL=Y
+LOG_EM_DASHBOARD[Y/N]=N
+Location\ ID=HXM2
+CC=
+SF_CREDENTIAL=HXM_OAuth2.0_T4
+To=kjayakumari@deloitte.com
+INTERFACE_NAME=NCTC083_Intelligent Services Integration
+EXTERNAL_ENDPOINT=/updateGAHomeEventReason
