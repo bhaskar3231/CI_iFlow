@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+    <xs:element name="EmpEmployment">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" minOccurs="1" name="EmpEmployment">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element maxOccurs="1" name="userId" nillable="false">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:maxLength value="100"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element maxOccurs="1" name="personIdExternal" nillable="false">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:maxLength value="100"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element maxOccurs="1" minOccurs="0" name="userNav" nillable="true">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element maxOccurs="1" minOccurs="0" name="User">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element maxOccurs="1" name="userId" nillable="false">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:maxLength value="100"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element maxOccurs="1" minOccurs="0" name="jobInfoNav" nillable="true">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element maxOccurs="unbounded" minOccurs="0" name="EmpJob">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element maxOccurs="1" minOccurs="0" name="employeeClassNav" nillable="true">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element maxOccurs="1" minOccurs="0" name="PicklistOption">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element maxOccurs="1" minOccurs="0" name="externalCode" nillable="true">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string">
+                                                                                        <xs:maxLength value="256"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                            <xs:element maxOccurs="1" minOccurs="0" name="localeLabel" nillable="true" type="xs:string"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element maxOccurs="1" minOccurs="0" name="emplStatusNav" nillable="true">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element maxOccurs="1" minOccurs="0" name="PicklistOption">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element maxOccurs="1" minOccurs="0" name="externalCode" nillable="true">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string">
+                                                                                        <xs:maxLength value="256"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element maxOccurs="1" minOccurs="0" name="countryOfCompany" nillable="true" type="xs:string"/>
+                                                    <xs:element maxOccurs="1" minOccurs="0" name="companyNav" nillable="true">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element maxOccurs="1" minOccurs="0" name="FOCompany">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element maxOccurs="1" name="externalCode" nillable="false">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string">
+                                                                                        <xs:maxLength value="4"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                            <xs:element maxOccurs="1" minOccurs="0" name="name_defaultValue" nillable="true">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string">
+                                                                                        <xs:maxLength value="90"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element maxOccurs="1" minOccurs="0" name="positionNav" nillable="true">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element maxOccurs="1" minOccurs="0" name="Position">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element maxOccurs="1" name="code" nillable="false">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string">
+                                                                                        <xs:maxLength value="128"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                            <xs:element maxOccurs="1" minOccurs="0" name="externalName_defaultValue" nillable="true">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string">
+                                                                                        <xs:maxLength value="255"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element maxOccurs="1" name="startDate" nillable="false" type="xs:dateTime"/>
+                                                    <xs:element maxOccurs="1" name="payScaleGroup" nillable="false">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:maxLength value="128"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element type="xs:dateTime" nillable="true" minOccurs="0" maxOccurs="1" name="positionEntryDate" xmlns=""/>
+                                                    <xs:element maxOccurs="1" minOccurs="0" name="payScaleLevel" nillable="true">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:maxLength value="128"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element maxOccurs="1" name="customDouble1" nillable="false" type="xs:long"/>
+                                                    <xs:element maxOccurs="1" minOccurs="0" name="customString24Nav" nillable="true">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element maxOccurs="1" minOccurs="0" name="cust_PersonnelArea">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element maxOccurs="1" name="personnelAreaName" nillable="false">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string">
+                                                                                        <xs:maxLength value="30"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element maxOccurs="1" name="customString24" nillable="false">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:maxLength value="4"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element maxOccurs="1" name="customString25" nillable="false">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:maxLength value="128"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element maxOccurs="1" minOccurs="0" name="customString25Nav" nillable="true">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element maxOccurs="1" minOccurs="0" name="cust_PersonnelSubArea">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element maxOccurs="1" name="personnelSubAreaName" nillable="false">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string">
+                                                                                        <xs:maxLength value="128"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element maxOccurs="1" minOccurs="0" name="customString29Nav" nillable="true">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element maxOccurs="1" minOccurs="0" name="PicklistOption">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element maxOccurs="1" minOccurs="0" name="externalCode" nillable="true">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string">
+                                                                                        <xs:maxLength value="256"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                            <xs:element maxOccurs="1" minOccurs="0" name="localeLabel" nillable="true" type="xs:string"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element maxOccurs="1" minOccurs="0" name="costCenterNav" nillable="true">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element maxOccurs="1" minOccurs="0" name="FOCostCenter">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element maxOccurs="1" name="externalCode" nillable="false">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string">
+                                                                                        <xs:maxLength value="14"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                            <xs:element maxOccurs="1" minOccurs="0" name="description_defaultValue" nillable="true">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string">
+                                                                                        <xs:maxLength value="128"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element maxOccurs="1" minOccurs="0" name="workscheduleCodeNav" nillable="true">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element maxOccurs="1" minOccurs="0" name="WorkSchedule">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element maxOccurs="1" name="externalCode" nillable="false">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string">
+                                                                                        <xs:maxLength value="128"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                            <xs:element maxOccurs="1" minOccurs="0" name="externalName_defaultValue" nillable="true">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string">
+                                                                                        <xs:maxLength value="255"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                            <xs:element maxOccurs="1" minOccurs="0" name="averageHoursPerDay" nillable="true" type="xs:decimal"/>
+                                                                            <xs:element maxOccurs="1" minOccurs="0" name="averageHoursPerMonth" nillable="true" type="xs:decimal"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element maxOccurs="1" minOccurs="0" name="standardHours" nillable="true" type="xs:double"/>
+                                                    <xs:element maxOccurs="1" minOccurs="0" name="eventNav" nillable="true">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element maxOccurs="1" minOccurs="0" name="PicklistOption">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element maxOccurs="1" minOccurs="0" name="externalCode" nillable="true">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string">
+                                                                                        <xs:maxLength value="256"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                            <xs:element maxOccurs="1" minOccurs="0" name="localeLabel" nillable="true" type="xs:string"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element maxOccurs="1" minOccurs="0" name="eventReasonNav" nillable="true">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element maxOccurs="1" minOccurs="0" name="FOEventReason">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element maxOccurs="1" name="externalCode" nillable="false">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string">
+                                                                                        <xs:maxLength value="32"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                            <xs:element maxOccurs="1" minOccurs="0" name="name" nillable="true">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string">
+                                                                                        <xs:maxLength value="32"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element maxOccurs="1" name="employeeClass" nillable="false">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:maxLength value="256"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element maxOccurs="1" minOccurs="0" name="jobTitle" nillable="true">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:maxLength value="256"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element maxOccurs="1" minOccurs="0" name="customString66" nillable="true">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:maxLength value="14"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element maxOccurs="1" minOccurs="0" name="customString66Nav" nillable="true">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element maxOccurs="1" minOccurs="0" name="FOCostCenter">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element maxOccurs="1" name="externalCode" nillable="false">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string">
+                                                                                        <xs:maxLength value="14"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element maxOccurs="1" minOccurs="0" name="personNav" nillable="true">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element maxOccurs="1" minOccurs="0" name="PerPerson">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element maxOccurs="1" minOccurs="0" name="personalInfoNav" nillable="true">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element maxOccurs="unbounded" minOccurs="0" name="PerPersonal">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element maxOccurs="1" name="firstName" nillable="false">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string">
+                                                                                        <xs:maxLength value="40"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                            <xs:element maxOccurs="1" name="lastName" nillable="false">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string">
+                                                                                        <xs:maxLength value="40"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                            <xs:element maxOccurs="1" minOccurs="0" name="salutation" nillable="true">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string">
+                                                                                        <xs:maxLength value="128"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                            <xs:element maxOccurs="1" minOccurs="0" name="nationality" nillable="true">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string">
+                                                                                        <xs:maxLength value="128"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                            <xs:element maxOccurs="1" minOccurs="0" name="maritalStatusNav" nillable="true">
+                                                                                <xs:complexType>
+                                                                                    <xs:sequence>
+                                                                                        <xs:element maxOccurs="1" minOccurs="0" name="PicklistOption">
+                                                                                            <xs:complexType>
+                                                                                                <xs:sequence>
+                                                                                                    <xs:element maxOccurs="1" minOccurs="0" name="externalCode" nillable="true">
+                                                                                                        <xs:simpleType>
+                                                                                                            <xs:restriction base="xs:string">
+                                                                                                                <xs:maxLength value="256"/>
+                                                                                                            </xs:restriction>
+                                                                                                        </xs:simpleType>
+                                                                                                    </xs:element>
+                                                                                                    <xs:element maxOccurs="1" minOccurs="0" name="localeLabel" nillable="true" type="xs:string"/>
+                                                                                                </xs:sequence>
+                                                                                            </xs:complexType>
+                                                                                        </xs:element>
+                                                                                    </xs:sequence>
+                                                                                </xs:complexType>
+                                                                            </xs:element>
+                                                                            <xs:element maxOccurs="1" minOccurs="0" name="salutationNav" nillable="true">
+                                                                                <xs:complexType>
+                                                                                    <xs:sequence>
+                                                                                        <xs:element maxOccurs="1" minOccurs="0" name="PicklistOption">
+                                                                                            <xs:complexType>
+                                                                                                <xs:sequence>
+                                                                                                    <xs:element maxOccurs="1" minOccurs="0" name="localeLabel" nillable="true" type="xs:string"/>
+                                                                                                </xs:sequence>
+                                                                                            </xs:complexType>
+                                                                                        </xs:element>
+                                                                                    </xs:sequence>
+                                                                                </xs:complexType>
+                                                                            </xs:element>
+                                                                            <xs:element maxOccurs="1" minOccurs="0" name="gender" nillable="true">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string">
+                                                                                        <xs:maxLength value="2"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element maxOccurs="1" minOccurs="0" name="dateOfBirth" nillable="true" type="xs:dateTime"/>
+                                                    <xs:element maxOccurs="1" minOccurs="0" name="homeAddressNavDEFLT" nillable="true">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element maxOccurs="unbounded" minOccurs="0" name="PerAddressDEFLT">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element maxOccurs="1" minOccurs="0" name="address1" nillable="true">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string">
+                                                                                        <xs:maxLength value="256"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                            <xs:element maxOccurs="1" minOccurs="0" name="address2" nillable="true">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string">
+                                                                                        <xs:maxLength value="256"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                            <xs:element maxOccurs="1" minOccurs="0" name="address4" nillable="true">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string">
+                                                                                        <xs:maxLength value="256"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                            <xs:element maxOccurs="1" name="city" nillable="false">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string">
+                                                                                        <xs:maxLength value="256"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                            <xs:element maxOccurs="1" minOccurs="0" name="zipCode" nillable="true">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string">
+                                                                                        <xs:maxLength value="256"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                            <xs:element maxOccurs="1" name="country" nillable="false">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string">
+                                                                                        <xs:maxLength value="256"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                            <xs:element maxOccurs="1" name="addressType" nillable="false">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string">
+                                                                                        <xs:maxLength value="30"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                            <xs:element maxOccurs="1" name="startDate" nillable="false" type="xs:dateTime"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element maxOccurs="1" minOccurs="0" name="emailNav" nillable="true">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element maxOccurs="unbounded" minOccurs="0" name="PerEmail">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element maxOccurs="1" minOccurs="0" name="emailTypeNav" nillable="true">
+                                                                                <xs:complexType>
+                                                                                    <xs:sequence>
+                                                                                        <xs:element maxOccurs="1" minOccurs="0" name="PicklistOption">
+                                                                                            <xs:complexType>
+                                                                                                <xs:sequence>
+                                                                                                    <xs:element maxOccurs="1" minOccurs="0" name="externalCode" nillable="true">
+                                                                                                        <xs:simpleType>
+                                                                                                            <xs:restriction base="xs:string">
+                                                                                                                <xs:maxLength value="256"/>
+                                                                                                            </xs:restriction>
+                                                                                                        </xs:simpleType>
+                                                                                                    </xs:element>
+                                                                                                </xs:sequence>
+                                                                                            </xs:complexType>
+                                                                                        </xs:element>
+                                                                                    </xs:sequence>
+                                                                                </xs:complexType>
+                                                                            </xs:element>
+                                                                            <xs:element maxOccurs="1" name="emailAddress" nillable="false">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string">
+                                                                                        <xs:maxLength value="100"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element maxOccurs="1" minOccurs="0" name="nationalIdNav" nillable="true">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element maxOccurs="unbounded" minOccurs="0" name="PerNationalId">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element maxOccurs="1" name="nationalId" nillable="false">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string">
+                                                                                        <xs:maxLength value="256"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element maxOccurs="1" name="startDate" nillable="false" type="xs:dateTime"/>
+                            <xs:element maxOccurs="1" name="endDate" nillable="false" type="xs:dateTime"/>
+                            <xs:element maxOccurs="1" minOccurs="0" name="assignmentIdExternal" nillable="true">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:maxLength value="256"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element maxOccurs="1" minOccurs="0" name="compInfoNav" nillable="true">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element maxOccurs="unbounded" minOccurs="0" name="EmpCompensation">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element maxOccurs="1" name="startDate" nillable="false" type="xs:dateTime"/>
+                                                    <xs:element maxOccurs="1" minOccurs="0" name="empPayCompRecurringNav" nillable="true">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element maxOccurs="unbounded" minOccurs="0" name="EmpPayCompRecurring">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element maxOccurs="1" name="paycompvalue" nillable="false" type="xs:double"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element maxOccurs="1" minOccurs="0" name="paymentInformationNav" nillable="true">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element maxOccurs="unbounded" minOccurs="0" name="PaymentInformationV3">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element maxOccurs="1" minOccurs="0" name="toPaymentInformationDetailV3" nillable="true">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element maxOccurs="unbounded" minOccurs="0" name="PaymentInformationDetailV3">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element maxOccurs="1" minOccurs="0" name="bank" nillable="true">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string">
+                                                                                        <xs:maxLength value="128"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                            <xs:element maxOccurs="1" minOccurs="0" name="accountNumber" nillable="true">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string">
+                                                                                        <xs:maxLength value="255"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                            <xs:element maxOccurs="1" minOccurs="0" name="accountOwner" nillable="true">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string">
+                                                                                        <xs:maxLength value="40"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                            <xs:element maxOccurs="1" minOccurs="0" name="bankNav" nillable="true">
+                                                                                <xs:complexType>
+                                                                                    <xs:sequence>
+                                                                                        <xs:element maxOccurs="1" minOccurs="0" name="Bank">
+                                                                                            <xs:complexType>
+                                                                                                <xs:sequence>
+                                                                                                    <xs:element maxOccurs="1" name="bankName" nillable="false">
+                                                                                                        <xs:simpleType>
+                                                                                                            <xs:restriction base="xs:string">
+                                                                                                                <xs:maxLength value="128"/>
+                                                                                                            </xs:restriction>
+                                                                                                        </xs:simpleType>
+                                                                                                    </xs:element>
+                                                                                                </xs:sequence>
+                                                                                            </xs:complexType>
+                                                                                        </xs:element>
+                                                                                    </xs:sequence>
+                                                                                </xs:complexType>
+                                                                            </xs:element>
+                                                                            <xs:element maxOccurs="1" minOccurs="0" name="routingNumber" nillable="true">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string">
+                                                                                        <xs:maxLength value="255"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element maxOccurs="1" minOccurs="0" name="empJobRelationshipNav" nillable="true">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element maxOccurs="unbounded" minOccurs="0" name="EmpJobRelationships">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element maxOccurs="1" name="relUserId" nillable="false">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:maxLength value="384"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element maxOccurs="1" minOccurs="0" name="relationshipTypeNav" nillable="true">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element maxOccurs="1" minOccurs="0" name="PicklistOption">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element maxOccurs="1" minOccurs="0" name="externalCode" nillable="true">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string">
+                                                                                        <xs:maxLength value="256"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element maxOccurs="1" minOccurs="0" name="employmentNav" nillable="true">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element maxOccurs="1" minOccurs="0" name="EmpEmployment">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element maxOccurs="1" minOccurs="0" name="personNav" nillable="true">
+                                                                                <xs:complexType>
+                                                                                    <xs:sequence>
+                                                                                        <xs:element maxOccurs="1" minOccurs="0" name="PerPerson">
+                                                                                            <xs:complexType>
+                                                                                                <xs:sequence>
+                                                                                                    <xs:element maxOccurs="1" minOccurs="0" name="personalInfoNav" nillable="true">
+                                                                                                        <xs:complexType>
+                                                                                                            <xs:sequence>
+                                                                                                                <xs:element maxOccurs="unbounded" minOccurs="0" name="PerPersonal">
+                                                                                                                    <xs:complexType>
+                                                                                                                        <xs:sequence>
+                                                                                                                            <xs:element maxOccurs="1" name="firstName" nillable="false">
+                                                                                                                                <xs:simpleType>
+                                                                                                                                    <xs:restriction base="xs:string">
+                                                                                                                                        <xs:maxLength value="40"/>
+                                                                                                                                    </xs:restriction>
+                                                                                                                                </xs:simpleType>
+                                                                                                                            </xs:element>
+                                                                                                                            <xs:element maxOccurs="1" name="lastName" nillable="false">
+                                                                                                                                <xs:simpleType>
+                                                                                                                                    <xs:restriction base="xs:string">
+                                                                                                                                        <xs:maxLength value="40"/>
+                                                                                                                                    </xs:restriction>
+                                                                                                                                </xs:simpleType>
+                                                                                                                            </xs:element>
+                                                                                                                        </xs:sequence>
+                                                                                                                    </xs:complexType>
+                                                                                                                </xs:element>
+                                                                                                            </xs:sequence>
+                                                                                                        </xs:complexType>
+                                                                                                    </xs:element>
+                                                                                                </xs:sequence>
+                                                                                            </xs:complexType>
+                                                                                        </xs:element>
+                                                                                    </xs:sequence>
+                                                                                </xs:complexType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
