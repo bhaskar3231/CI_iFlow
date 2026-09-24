@@ -1,0 +1,5 @@
+#Store metainfo properties
+#Thu Sep 24 17:11:19 UTC 2026
+description=This CI Integration will be used to read information from SAP SuccessFactors system and send it to MentorcliQ as a combined file. All Active Headcount, Future Hires, Future Terminations, LOA and Offer Decline (No-Show) employees are part of the O/P file.
+source=SuccessFactors
+target=MentorcliQ

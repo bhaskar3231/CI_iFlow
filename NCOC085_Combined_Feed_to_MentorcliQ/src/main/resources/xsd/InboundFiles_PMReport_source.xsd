@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="RootNode">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="RowNode" maxOccurs="unbounded" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="GEPersonneID" type="xs:string" />
+							<xs:element name="EmployeeName" type="xs:string" />
+							<xs:element name="JobLevelDesc" type="xs:string" />
+							<xs:element name="JobLevelSummaryDesc" type="xs:string" />
+							<xs:element name="OfferingPortfolio" type="xs:string" />
+							<xs:element name="Offering" type="xs:string" />
+							<xs:element name="PersonnelSubareaDesc" type="xs:string" />
+							<xs:element name="DeloitteEmailAddress" type="xs:string" />
+							<xs:element name="Milestone" type="xs:string" />
+							<xs:element name="YAL" type="xs:string" />
+							<xs:element name="ClusterInformation" type="xs:string" />
+							<xs:element name="SkillCategory" type="xs:string" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="EmpEmployment">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="EmpEmployment" maxOccurs="unbounded" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="GEPersonnelID" type="xs:string" />
+							<xs:element name="FirstName" type="xs:string" />
+							<xs:element name="LastName" type="xs:string" />
+							<xs:element name="NoofCounseleesfortheProfessional" type="xs:string" />
+							<xs:element name="DeloitteEmailAddress" type="xs:string" />
+							<xs:element name="Counselee Personal Email" type="xs:string" />
+							<xs:element name="Title" type="xs:string" />
+							<xs:element name="JobDesc" type="xs:string" />
+							<xs:element name="JobLevelDesc" type="xs:string" />
+							<xs:element name="JobCode" type="xs:string" />
+							<xs:element name="AnniversaryDate" type="xs:string" />
+							<xs:element name="EmployeeCostCenter" type="xs:string" />
+							<xs:element name="EmployeeCostCenterDesc" type="xs:string" />
+							<xs:element name="CurrentCostCenterBusinessDesc" type="xs:string" />
+							<xs:element name="CurrentCostCenterBusinessAreaDesc" type="xs:string" />
+							<xs:element name="CurrentCostCenterBusinessLineDesc" type="xs:string" />
+							<xs:element name="CurrentCostCenterRegionDesc" type="xs:string" />
+							<xs:element name="FacilityRegionDesc" type="xs:string" />
+							<xs:element name="PersonnelSubArea" type="xs:string" />
+							<xs:element name="FederalGPSIndicator" type="xs:string" />
+							<xs:element name="LOAIndicator" type="xs:string" />
+							<xs:element name="HireType" type="xs:string" />
+							<xs:element name="CurrentPrimaryIndustryDesc" type="xs:string" />
+							<xs:element name="CurrentPrimarySectorDesc" type="xs:string" />
+							<xs:element name="CurrentSecondaryIndustryDesc" type="xs:string" />
+							<xs:element name="CurrentSecondarySectorDesc" type="xs:string" />
+							<xs:element name="CurrentMarketOfferingCapabilityDesc" type="xs:string" />
+							<xs:element name="CurrentSecondaryMarketOfferingCapabilityDesc" type="xs:string" />
+							<xs:element name="GERollupLevelTIL" type="xs:string" />
+							<xs:element name="EmployeeCurrentTenure" type="xs:string" />
+							<xs:element name="EmployeeSubgroupDesc" type="xs:string" />
+							<xs:element name="CapabilityEmployee" type="xs:string" />
+							<xs:element name="SubCapabilityEmployee" type="xs:string" />
+							<xs:element name="FocusAreaDesc" type="xs:string" />
+							<xs:element name="TalentModel" type="xs:string" />
+							<xs:element name="TalentTrack" type="xs:string" />
+							<xs:element name="CurrentEmployeeCounselorName" type="xs:string" />
+							<xs:element name="CurrentEmployeeCounselorID" type="xs:string" />
+							<xs:element name="EmployeeCounselorEmailID" type="xs:string" />
+							<xs:element name="EmployeeGroupDesc" type="xs:string" />
+							<xs:element name="SeparationEffectiveDate" type="xs:string" />
+							<xs:element name="SeparationTypeDesc" type="xs:string" />
+							<xs:element name="LastDayWorked" type="xs:string" />
+							<xs:element name="EmploymentEndDate" type="xs:string" />
+							<xs:element name="LOAReasonCode" type="xs:string" />
+							<xs:element name="LOAReasonDesc" type="xs:string" />
+							<xs:element name="ValidFrom" type="xs:string" />
+							<xs:element name="ValidTo" type="xs:string" />
+							<xs:element name="ActionType" type="xs:string" />
+							<xs:element name="BCLP" type="xs:string" />
+							<xs:element name="DNU" type="xs:string" />
+							<xs:element name="ExceptionType" type="xs:string" />
+							<xs:element name="SmartMatchEligibleOBA" type="xs:string" />
+							<xs:element name="SmartMatchEligibleCoach" type="xs:string" />
+							<xs:element name="RequiresApprovalOBA" type="xs:string" />
+							<xs:element name="RequiresApprovalCoach" type="xs:string" />
+							<xs:element name="Misc1" type="xs:string" />
+							<xs:element name="Misc2" type="xs:string" />
+							<xs:element name="Misc3" type="xs:string" />
+							<xs:element name="Misc4" type="xs:string" />
+							<xs:element name="Misc5" type="xs:string" />
+							<xs:element name="SkillCategory" type="xs:string" />
+							<xs:element name="DORDateofResignation" type="xs:string" />
+							<xs:element name="CurrentCostCenterBusinessSubLineDesc" type="xs:string" />
+							<xs:element name="BuddyPool" type="xs:string" />
+							<xs:element name="job_startDate" type="xs:string" />
+							<xs:element name="job_seqNumber" type="xs:string" />
+							<xs:element name="emplStatus" type="xs:string" />
+							
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
