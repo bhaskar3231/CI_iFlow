@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="root">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" name="contact">
+          <xs:complexType>
+            <xs:sequence>
+			<xs:element minOccurs="0" name="WCT_Personnel_Number__c" type="xs:unsignedInt" />
+			<xs:element minOccurs="0" name="WCT_Person_Id__c" type="xs:string" />
+			<xs:element minOccurs="0" name="WCT_User_Id__c" type="xs:string" />
+			<xs:element minOccurs="0" name="WCT_SSN__c" type="xs:unsignedShort" />
+            <xs:element minOccurs="0" name="WCT_India_PAN_Last_4_digits__c" type="xs:unsignedShort" />
+			<xs:element minOccurs="0" name="Birthdate" type="xs:date" />			  
+			<xs:element minOccurs="0" name="WCT_Marital_Status__c" type="xs:string" />      
+			<xs:element minOccurs="0" name="WCT_Name_Prefix__c" type="xs:string" />
+			<xs:element minOccurs="0" name="LastName" type="xs:string" />
+			<xs:element minOccurs="0" name="FirstName" type="xs:string" />
+			<xs:element minOccurs="0" name="WCT_Middle_Name__c" type="xs:string" />
+			<xs:element minOccurs="0" name="WCT_Preferred_Name__c" type="xs:string" />
+			<xs:element minOccurs="0" name="WCT_Prior_Name__c" type="xs:string" />
+			<xs:element minOccurs="0" name="WCT_Name_Suffix__c" type="xs:string" />
+			<xs:element minOccurs="0" name="Email" type="xs:string" />
+            <xs:element minOccurs="0" name="WCT_ExternalEmail__c" type="xs:string" />
+			<xs:element minOccurs="0" name="USG_Personnel_Class__c" type="xs:string" />
+			<xs:element minOccurs="0" name="USG_Personnel_Type__c" type="xs:string" />
+			<xs:element minOccurs="0" name="USG_Sub_Level__c" type="xs:string" />
+			<xs:element minOccurs="0" name="USG_Country_Of_Registration__c" type="xs:string" />
+			<xs:element minOccurs="0" name="WCT_Job_Level_Text__c" type="xs:string" />
+			<xs:element minOccurs="0" name="WCT_Job_Text__c" type="xs:string" />
+			<xs:element minOccurs="0" name="WCT_Employee_Status__c" type="xs:string" />
+			<xs:element minOccurs="0" name="WCT_Gender__c" type="xs:string" />
+			<xs:element minOccurs="0" name="WCT_Cost_Center__c" type="xs:unsignedInt" />
+			<xs:element minOccurs="0" name="WCT_Company_Codenew__c" type="xs:string" />
+		    <xs:element minOccurs="0" name="WCT_Region__c" type="xs:string" />
+            <xs:element minOccurs="0" name="WCT_Function__c" type="xs:string" />
+            <xs:element minOccurs="0" name="WCT_Service_Area__c" type="xs:string" />
+            <xs:element minOccurs="0" name="WCT_Service_Line__c" type="xs:string" />
+			<xs:element minOccurs="0" name="WCT_Org_Unit__c" type="xs:unsignedInt" />
+			<xs:element minOccurs="0" name="WCT_Primary_Market_Offering__c" type="xs:string" />
+			<xs:element minOccurs="0" name="WCT_Sub_Secondary_Market_Offering__c" type="xs:string" />
+			<xs:element minOccurs="0" name="WCT_Primary_Industry__c" type="xs:string" />
+			<xs:element minOccurs="0" name="WCT_Sub_Secondary_Industry__c" type="xs:string" />
+			<xs:element minOccurs="0" name="WCT_Primary_Segment__c" type="xs:string" />
+			<xs:element minOccurs="0" name="WCT_Secondary_Segment__c" type="xs:string" />
+			<xs:element minOccurs="0" name="WCT_Original_Hire_Date__c" type="xs:date" />
+            <xs:element minOccurs="0" name="WCT_Most_Recent_Rehire__c" type="xs:date" />
+            <xs:element minOccurs="0" name="WCT_Last_Day_Worked__c" type="xs:date" />
+            <xs:element minOccurs="0" name="WCT_Terminated_Date__c" type="xs:date" />
+			<xs:element minOccurs="0" name="WCT_Facility_Name__c" type="xs:string" />
+			<xs:element minOccurs="0" name="Phone" type="xs:string" />
+			<xs:element minOccurs="0" name="Fax" type="xs:string" />
+			<xs:element minOccurs="0" name="MobilePhone" type="xs:string" />
+			<xs:element minOccurs="0" name="WCT_DPM_Counselor__c" type="xs:string" />
+			<xs:element minOccurs="0" name="WCT_Home_Street_2__c" type="xs:unsignedInt" />
+			<xs:element minOccurs="0" name="WCT_Home_Street__c" type="xs:unsignedInt" />
+            <xs:element minOccurs="0" name="WCT_Home_City__c" type="xs:string" />
+            <xs:element minOccurs="0" name="WCT_Home_State__c" type="xs:string" />
+            <xs:element minOccurs="0" name="WCT_Home_Country__c" type="xs:string" />	
+			<xs:element minOccurs="0" name="WCT_Citizenship__c" type="xs:string" />
+			<xs:element minOccurs="0" name="WCT_Personnel_Area_Code__c" type="xs:string" />
+			<xs:element minOccurs="0" name="WCT_Office_City_Personnel_Subarea__c" type="xs:string" />
+            <xs:element minOccurs="0" name="WCT_PS_Group__c" type="xs:string" /> 
+			<xs:element minOccurs="0" name="CBP_Hire_Source_Description__c" type="xs:string" />
+			<xs:element minOccurs="0" name="H1B_Work_Permit_Type__c" type="xs:string" />
+            <xs:element minOccurs="0" name="H1B_Work_Permit_Expiry_Date__c" type="xs:date" /> 
+			<xs:element minOccurs="0" name="H1B_Cost_Center_Description__c" type="xs:string" />
+			<xs:element minOccurs="0" name="ELE_Counselor_Email_ID__c" type="xs:string" />
+			<xs:element minOccurs="0" name="CBP_Service_Date__c" type="xs:date" />
+			<xs:element minOccurs="0" name="CBP_Personnel_Subarea_Code__c" type="xs:string" />
+            <xs:element minOccurs="0" name="CBP_Job_Level_Code__c" type="xs:string" /> 
+			<xs:element minOccurs="0" name="CBP_Employment_Percent__c" type="xs:string" />
+			<xs:element minOccurs="0" name="WCT_Capability_Description__c" type="xs:string" />
+			<xs:element minOccurs="0" name="WCT_Sub_Capability_Description__c" type="xs:string" />
+			<xs:element minOccurs="0" name="WCT_HR_Service_Line_Code__c" type="xs:string" /> 
+			<xs:element minOccurs="0" name="WCT_HR_Service_Area_Code__c" type="xs:string" />
+			<xs:element minOccurs="0" name="WCT_Company_Code__c" type="xs:string" />
+			<xs:element minOccurs="0" name="Cost_Center_Business_Sub_Line_Desc__c" type="xs:string" />
+			</xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

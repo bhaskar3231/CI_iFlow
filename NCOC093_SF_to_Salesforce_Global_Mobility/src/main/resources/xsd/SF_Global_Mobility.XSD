@@ -1,0 +1,670 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="EmpEmployment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="EmpEmployment">
+          <xs:complexType>
+            <xs:sequence>
+			<xs:element type="xs:int" name="personIdExternal"/>
+			<xs:element type="xs:int" name="userId"/>
+			<xs:element type="xs:dateTime" name="lastModifiedDateTime"/>
+            <xs:element type="xs:string" name="endDate"/>
+            <xs:element type="xs:string" name="assignmentClass"/>
+            <xs:element type="xs:string" name="isContingentWorker"/>
+			<xs:element type="xs:string" name="lastDateWorked"/>
+			<xs:element type="xs:dateTime" name="originalStartDate"/>
+			<xs:element type="xs:dateTime" name="startDate"/>
+              <xs:element name="userNav">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="User">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="username"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Background_Industry">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="IndustryNav">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="PicklistOption">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="localeLabel"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Industry_2ndNav">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="PicklistOption">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="localeLabel"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element type="xs:int" name="userId"/>
+                    <xs:element name="Sector_2ndNav">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="PicklistOption">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="localeLabel"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="SectorNav">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="PicklistOption">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="localeLabel"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>      
+              <xs:element name="jobInfoNav">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="EmpJob">
+                      <xs:complexType>
+                        <xs:sequence>
+                     	  <xs:element name="customString14Nav">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="PicklistOption">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:string" name="externalCode"/>
+                                      <xs:element type="xs:string" name="externalName"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element type="xs:dateTime" name="lastModifiedDateTime"/>
+						  <xs:element name="customString3Nav">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="cust_sublevel">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:string" name="externalCode"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+						  <xs:element type="xs:string" name="countryOfCompany"/>
+                          <xs:element type="xs:dateTime" name="customDate8"/>
+						  <xs:element name="customString9Nav">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="cust_capability">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:string" name="externalCode"/>
+									  <xs:element type="xs:string" name="externalName"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element type="xs:float" name="fte"/>
+                          <xs:element type="xs:string" name="hireSource"/>
+						  <xs:element type="xs:short" name="company"/>
+                          <xs:element type="xs:string" name="countryOfCompanyNav"/>
+						  <xs:element name="customString13Nav">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="PicklistOption">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:string" name="externalCode"/>
+                                      <xs:element type="xs:string" name="externalName"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                   	      <xs:element name="customString17Nav">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="PicklistOption">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:string" name="externalCode"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+						  <xs:element type="xs:int" name="costCenter"/>
+						  <xs:element name="hireSourceNav">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="PicklistOption">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:string" name="externalCode"/>
+									  <xs:element type="xs:string" name="localeLabel"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element type="xs:int" name="userId"/>
+						  <xs:element name="customString10Nav">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="cust_subcapability">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:string" name="externalCode"/>
+									  <xs:element type="xs:string" name="externalName"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element type="xs:byte" name="seqNumber"/>
+						  <xs:element type="xs:dateTime" name="startDate"/>
+                          <xs:element name="locationNav">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="FOLocation">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:string" name="externalCode"/>
+                                      <xs:element name="addressNavDEFLT">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="FOCorporateAddressDEFLT">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element type="xs:string" name="city"/>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element type="xs:string" name="name"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>             
+                          <xs:element name="costCenterNav">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="FOCostCenter">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:int" name="externalCode"/>
+                                      <xs:element type="xs:string" name="cust_Region"/>
+                                      <xs:element type="xs:string" name="name"/>
+                                      <xs:element type="xs:string" name="cust_BusinessLine"/>
+                                      <xs:element type="xs:string" name="cust_BusinessArea"/>
+                                      <xs:element type="xs:string" name="cust_Business"/>
+                                      <xs:element type="xs:string" name="cust_BusinessSubLine"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="employeeClassNav">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="PicklistOption">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:string" name="externalCode"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="jobCodeNav">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="FOJobCode">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:string" name="name"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="companyNav">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="FOCompany">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:string" name="name"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="emplStatusNav">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="PicklistOption">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:string" name="localeLabel"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="employmentTypeNav">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="PicklistOption">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:string" name="externalCode"/>
+                                      <xs:element type="xs:string" name="localeLabel"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>                          
+                          <xs:element name="customString4Nav">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="cust_Level">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:string" name="externalCode"/>
+                                      <xs:element type="xs:string" name="externalName"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>                       
+                          <xs:element name="departmentNav">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="FODepartment">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:int" name="externalCode"/>
+                                      <xs:element type="xs:string" name="name"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="personNav">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="PerPerson">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="personalInfoNav">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="PerPersonal">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:string" name="lastName"/>
+                                      <xs:element nillable="true" minOccurs="0" maxOccurs="unbounded" name="localNavIND">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element minOccurs="0" maxOccurs="1" name="PerGlobalInfoIND">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element nillable="true" minOccurs="0" maxOccurs="unbounded" name="genderCountrySpecificNav">
+                                                                                <xs:complexType>
+                                                                                    <xs:sequence>
+                                                                                        <xs:element minOccurs="0" maxOccurs="1" name="PicklistOption">
+                                                                                            <xs:complexType>
+                                                                                                <xs:sequence>
+                                                                                                    <xs:element type="xs:string" nillable="true" minOccurs="0" maxOccurs="1" name="localeLabel" xmlns=""/>
+                                                                                                </xs:sequence>
+                                                                                            </xs:complexType>
+                                                                                        </xs:element>
+                                                                                    </xs:sequence>
+                                                                                </xs:complexType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                      <xs:element name="suffixNav">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="PicklistOption">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element type="xs:string" name="localeLabel"/>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element type="xs:dateTime" name="lastModifiedDateTime"/>
+                                      <xs:element type="xs:string" name="gender"/>
+                                      <xs:element type="xs:string" name="customString5"/>
+                                      <xs:element type="xs:string" name="birthName"/>
+                                      <xs:element name="salutationNav">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="PicklistOption">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element type="xs:string" name="localeLabel"/>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element type="xs:string" name="firstName"/>
+                                      <xs:element name="maritalStatusNav">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="PicklistOption">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element type="xs:string" name="externalCode"/>
+                                                  <xs:element type="xs:string" name="localeLabel"/>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element type="xs:string" name="nationality"/>
+                                      <xs:element type="xs:int" name="personIdExternal"/>
+                                      <xs:element type="xs:string" name="middleName"/>
+                                      <xs:element type="xs:string" name="preferredName"/>
+                                      <xs:element type="xs:dateTime" name="startDate"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="nationalIdNav">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="PerNationalId">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:string" name="country"/>
+                                      <xs:element type="xs:dateTime" name="lastModifiedDateTime"/>
+                                      <xs:element type="xs:string" name="nationalId"/>
+                                      <xs:element type="xs:int" name="personIdExternal"/>
+                                      <xs:element type="xs:string" name="cardType"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element type="xs:int" name="personIdExternal"/>
+                          <xs:element name="phoneNav">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="PerPhone" maxOccurs="unbounded" minOccurs="0">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:dateTime" name="lastModifiedDateTime"/>
+                                      <xs:element type="xs:string" name="phoneNumber"/>
+                                      <xs:element type="xs:int" name="personIdExternal"/>
+                                      <xs:element name="phoneTypeNav">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="PicklistOption">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element type="xs:string" name="externalCode"/>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="emailNav">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="PerEmail" maxOccurs="unbounded" minOccurs="0">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:string" name="emailAddress"/>
+                                      <xs:element type="xs:dateTime" name="lastModifiedDateTime"/>
+                                      <xs:element name="emailTypeNav">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="PicklistOption">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element type="xs:string" name="externalCode"/>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element type="xs:int" name="personIdExternal"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element type="xs:dateTime" name="dateOfBirth"/>
+                          <xs:element name="homeAddressNavDEFLT">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="PerAddressDEFLT" maxOccurs="unbounded" minOccurs="0">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:string" name="country"/>
+                                      <xs:element type="xs:short" name="zipCode"/>
+                                      <xs:element name="stateNav">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="PicklistOption">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element type="xs:string" name="externalCode"/>
+                                                  <xs:element type="xs:string" name="localeLabel"/>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element type="xs:dateTime" name="lastModifiedDateTime"/>
+                                      <xs:element type="xs:string" name="address2"/>
+                                      <xs:element type="xs:string" name="city"/>
+                                      <xs:element type="xs:string" name="addressType"/>
+                                      <xs:element type="xs:int" name="personIdExternal"/>
+                                      <xs:element type="xs:string" name="address1"/>
+                                      <xs:element type="xs:string" name="cityNav"/>
+                                      <xs:element type="xs:short" name="state"/>
+                                      <xs:element type="xs:dateTime" name="startDate"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="empJobRelationshipNav">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="EmpJobRelationships">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="relationshipTypeNav">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="PicklistOption">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:string" name="externalCode"/>
+                                      <xs:element type="xs:string" name="localeLabel"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element type="xs:int" name="userId"/>
+                          <xs:element type="xs:short" name="relUserId"/>
+                          <xs:element name="PerPerson">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="personalInfoNav">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="PerPersonal">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element type="xs:string" name="firstName"/>
+                                            <xs:element type="xs:string" name="lastName"/>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element type="xs:short" name="personIdExternal"/>
+                                <xs:element name="emailNav">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="PerEmail" maxOccurs="unbounded" minOccurs="0">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element type="xs:string" name="emailAddress"/>
+                                            <xs:element name="emailTypeNav">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="PicklistOption">
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element type="xs:string" name="externalCode"/>
+                                                      </xs:sequence>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>           
+              <xs:element name="empWorkPermitNav">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="EmpWorkPermit">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:int" name="documentType"/>
+						  <xs:element name="documentTypeNav">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="PicklistOption">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element type="xs:string" name="externalCode"/>
+                                                  <xs:element type="xs:string" name="localeLabel"/>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                          <xs:element type="xs:int" name="userId"/>
+                          <xs:element type="xs:dateTime" name="expirationDate"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

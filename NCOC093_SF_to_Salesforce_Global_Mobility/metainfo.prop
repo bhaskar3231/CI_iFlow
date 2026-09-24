@@ -1,0 +1,5 @@
+#Store metainfo properties
+#Thu Sep 24 17:08:31 UTC 2026
+description=The integration picks up the employee master data changes from SAP SuccessFactors, map and transform the records and send to Salesforce-Global Mobility application
+source=SuccessFactors
+target=Salesforce
