@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Root">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Record" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+            <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Record_type"/>
+			<xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Action"/>
+			<xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Start_date"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Leave_date"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Personnel_number"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="First_Name"/>
+	      <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Last_Name"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Title"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Date_of_Birth"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Nationality"/>
+	      <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Marital_Status"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Marital_Status_Text"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="House_Number"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="House_number_and_street"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Extra_Address_Line"/>
+	      <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="City"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Postal_Code"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Country"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Company_Code"/>
+	      <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Company_Code_Text"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Position"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Position_Text"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Start_date_in_position"/>
+	      <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Basic_salary_start_date"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Basic_salary_amount"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Pay_Scale_Group"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Pay_Scale_Level"/>
+	      <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Bank_number"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Name_of_bank"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Bank_account_number"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Bank_Account_holder"/>
+	      <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Capacity_Utilization_Level"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Admin_Supervisors_personnel_number"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Admin_Supervisors_name"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Email_address"/>
+	      <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Personnel_Area"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Personnel_Area_Text"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Personnel_Subarea"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Personnel_Subarea_Text"/>
+	      <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Employee_Group"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Name_of_Employee_Group"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Employee_Subgroup"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Name_of_Employee_Subgroup"/>
+	      <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Cost_Center"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Cost_Center_Text"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Work_Schedule_Rule"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Text_for_Work_Schedule_Rule_Planned_Working_Time_Infotype"/>
+	      <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Daily_Working_Hours"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Hours_per_week"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Monthly_hours"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Personnel_ID_Number"/>
+	      <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Action_Type"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Name_of_Action_Type"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Reason_for_Action"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Name_of_reason_for_action"/>
+	      <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Start_date_of_Action"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
