@@ -1,0 +1,7 @@
+#
+#Thu Sep 08 12:52:37 UTC 2022
+SFURL=https\://api55.sapsf.eu
+Sender=/NCTC067
+ProcessDirect=/UpdateExecutionManager
+SFCrdential=HXM_OAuth2.0
+ENABLE_PAYLOAD_LOGGING=TRUE
