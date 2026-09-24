@@ -1,0 +1,142 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Root">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="EY_Records" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Record_Type"/>
+              <xs:element type="xs:date" maxOccurs="1" minOccurs="0" name="Hiring_date"/>
+              <xs:element type="xs:date" maxOccurs="1" minOccurs="0" name="Leave_date"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Employment_Status"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Personnel_number"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Title"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="First_Name"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Middle_Name"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Last_Name"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Filler1"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Full_name"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Date_of_Birth"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Filler2"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Language"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Nationality"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Nationality_Text"/>
+              <xs:element type="xs:date" maxOccurs="1" minOccurs="0" name="Marital_Status"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Marital_Status_Text"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Gender"/>
+              <xs:element type="xs:date" maxOccurs="1" minOccurs="0" name="Gender_Text"/>
+              <xs:element type="xs:date" maxOccurs="1" minOccurs="0" name="Start_date_of_Address"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="House_number_and_street"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="City"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Postal_Code"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Country"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Filler3"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Filler4"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Company_Code"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Company_Code_Text"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Filler5"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Filler6"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Start_date_in_position"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Position"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Position_Text"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Basic_salary_start_date"/>
+              <xs:element type="xs:date" maxOccurs="1" minOccurs="0" name="Basic_salary_amount"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Capacity_Utilization_Level"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Pay_scale_Area"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Pay_Scale_Group"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Pay_Scale_Level"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Filler7"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Bank_number"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Name_of_bank"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Filler8"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Bank_account_number"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Bank_Account_holder"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Filler9"/>
+              <xs:element type="xs:date" maxOccurs="1" minOccurs="0" name="Email_address"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Personnel_Area"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Personnel_Area_Text"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Personnel_Subarea"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Personnel_Subarea_Text"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Employee_Group"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Name_of_Employee_Group"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Employee_Subgroup"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Name_of_Employee_Subgroup"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Filler10"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Start_date_of_EE_in_Cost_center"/>
+              <xs:element type="xs:date" maxOccurs="1" minOccurs="0" name="Cost_Center"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Cost_Center_Text"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Start_date_of_EE_in_WSF"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Work_Schedule_Rule"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Text_for_Work_Schedule_Rule"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Filler11"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Filler12"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Hours_per_week"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Monthly_hours"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Start_date_of_Action"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Action_Type"/>
+              <xs:element type="xs:date" maxOccurs="1" minOccurs="0" name="Name_of_Action_Type"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Reason_for_Action"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Name_of_reason_for_action"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="LaborContractType"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="LaborContractType_text"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Trial_Period_Till"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Admin_Supervisors_personnel_number"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Admin_Supervisors_name"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="National_ID_Number"/>
+              <xs:element type="xs:date" maxOccurs="1" minOccurs="0" name="TIN_number"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Filler13"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Filler14"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Filler15"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Filler16"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Filler17"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Filler18"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Filler19"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Filler20"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Filler21"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Filler22"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Filler23"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Filler24"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Filler25"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Filler26"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Filler27"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Filler28"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Filler29"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Filler30"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Filler31"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Filler32"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Filler33"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Filler34"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Filler35"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Filler36"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Filler37"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Filler38"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Filler39"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Filler40"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Filler41"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Filler42"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Filler43"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Filler44"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Filler45"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Filler46"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Filler47"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Filler48"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Filler49"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Filler50"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Filler51"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Filler52"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Filler53"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Filler54"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Filler55"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Filler56"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Filler57"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Filler58"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Filler59"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Bank_Reference_Details"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Latest_Hired_Date"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
