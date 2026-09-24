@@ -1,0 +1,953 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="EmpEmployment">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="1" maxOccurs="unbounded" name="EmpEmployment">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element nillable="true" minOccurs="0" maxOccurs="unbounded" name="personNav">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element minOccurs="0" maxOccurs="1" name="PerPerson">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element nillable="false" maxOccurs="1" name="personIdExternal">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string" xmlns="">
+                                                                <xs:maxLength value="32"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element nillable="true" minOccurs="0" maxOccurs="unbounded" name="userAccountNav">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element minOccurs="0" maxOccurs="1" name="UserAccount">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element nillable="false" maxOccurs="1" name="username">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string" xmlns="">
+                                                                                        <xs:maxLength value="100"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element nillable="true" minOccurs="0" maxOccurs="unbounded" name="nationalIdNav">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element minOccurs="0" maxOccurs="unbounded" name="PerNationalId">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element nillable="false" maxOccurs="1" name="cardType">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string" xmlns="">
+                                                                                        <xs:maxLength value="256"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                            <xs:element nillable="false" maxOccurs="1" name="country">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string" xmlns="">
+                                                                                        <xs:maxLength value="100"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                            <xs:element nillable="false" maxOccurs="1" name="nationalId">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string" xmlns="">
+                                                                                        <xs:maxLength value="256"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element nillable="true" minOccurs="0" maxOccurs="unbounded" name="personalInfoNav">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element minOccurs="0" maxOccurs="unbounded" name="PerPersonal">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="birthName">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string" xmlns="">
+                                                                                        <xs:maxLength value="128"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="customString5">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string" xmlns="">
+                                                                                        <xs:maxLength value="256"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                            <xs:element nillable="false" maxOccurs="1" name="firstName">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string" xmlns="">
+                                                                                        <xs:maxLength value="128"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="gender">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string" xmlns="">
+                                                                                        <xs:maxLength value="2"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                            <xs:element nillable="false" maxOccurs="1" name="lastName">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string" xmlns="">
+                                                                                        <xs:maxLength value="128"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="middleName">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string" xmlns="">
+                                                                                        <xs:maxLength value="128"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="preferredName">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string" xmlns="">
+                                                                                        <xs:maxLength value="128"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                            <xs:element type="xs:dateTime" nillable="true" minOccurs="0" maxOccurs="1" name="lastModifiedOn" xmlns=""/>
+                                                                            <xs:element type="xs:dateTime" nillable="true" minOccurs="0" maxOccurs="1" name="lastModifiedDateTime" xmlns=""/>
+                                                                            <xs:element name="salutationNav">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="PicklistOption">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="picklistLabels">
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element name="PicklistLabel">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                              <xs:element name="label" type="xs:string" />
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                      </xs:sequence>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                  <xs:element name="externalCode" type="xs:string" />
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                                                            <xs:element nillable="true" minOccurs="0" maxOccurs="unbounded" name="suffixNav">
+                                                                                <xs:complexType>
+                                                                                    <xs:sequence>
+                                                                                        <xs:element minOccurs="0" maxOccurs="1" name="PicklistOption">
+                                                                                            <xs:complexType>
+                                                                                                <xs:sequence>
+                                                                                                    <xs:element type="xs:string" nillable="true" minOccurs="0" maxOccurs="1" name="localeLabel" xmlns=""/>
+                                                                                                </xs:sequence>
+                                                                                            </xs:complexType>
+                                                                                        </xs:element>
+                                                                                    </xs:sequence>
+                                                                                </xs:complexType>
+                                                                            </xs:element>
+                                                                            <xs:element nillable="true" minOccurs="0" maxOccurs="unbounded" name="localNavIND">
+                                                                                <xs:complexType>
+                                                                                    <xs:sequence>
+                                                                                        <xs:element minOccurs="0" maxOccurs="1" name="PerGlobalInfoIND">
+                                                                                            <xs:complexType>
+                                                                                                <xs:sequence>
+                                                                                                    <xs:element nillable="true" minOccurs="0" maxOccurs="unbounded" name="genderCountrySpecificNav">
+                                                                                                        <xs:complexType>
+                                                                                                            <xs:sequence>
+                                                                                                                <xs:element minOccurs="0" maxOccurs="1" name="PicklistOption">
+                                                                                                                    <xs:complexType>
+                                                                                                                        <xs:sequence>
+                                                                                                                            <xs:element type="xs:string" nillable="true" minOccurs="0" maxOccurs="1" name="localeLabel" xmlns=""/>
+                                                                                                                        </xs:sequence>
+                                                                                                                    </xs:complexType>
+                                                                                                                </xs:element>
+                                                                                                            </xs:sequence>
+                                                                                                        </xs:complexType>
+                                                                                                    </xs:element>
+                                                                                                </xs:sequence>
+                                                                                            </xs:complexType>
+                                                                                        </xs:element>
+                                                                                    </xs:sequence>
+                                                                                </xs:complexType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element nillable="true" minOccurs="0" maxOccurs="unbounded" name="emailNav">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element minOccurs="0" maxOccurs="unbounded" name="PerEmail">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element nillable="false" maxOccurs="1" name="emailAddress">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string" xmlns="">
+                                                                                        <xs:maxLength value="100"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                            <xs:element nillable="true" minOccurs="0" maxOccurs="unbounded" name="emailTypeNav">
+                                                                                <xs:complexType>
+                                                                                    <xs:sequence>
+                                                                                        <xs:element minOccurs="0" maxOccurs="1" name="PicklistOption">
+                                                                                            <xs:complexType>
+                                                                                                <xs:sequence>
+                                                                                                    <xs:element type="xs:string" nillable="true" minOccurs="0" maxOccurs="1" name="localeLabel" xmlns=""/>
+                                                                                                    <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="externalCode">
+                                                                                                        <xs:simpleType>
+                                                                                                            <xs:restriction base="xs:string" xmlns="">
+                                                                                                                <xs:maxLength value="256"/>
+                                                                                                            </xs:restriction>
+                                                                                                        </xs:simpleType>
+                                                                                                    </xs:element>
+                                                                                                </xs:sequence>
+                                                                                            </xs:complexType>
+                                                                                        </xs:element>
+                                                                                    </xs:sequence>
+                                                                                </xs:complexType>
+                                                                            </xs:element>
+                                                                            <xs:element nillable="false" maxOccurs="1" name="emailType">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string" xmlns="">
+                                                                                        <xs:maxLength value="38"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element nillable="true" minOccurs="0" maxOccurs="unbounded" name="homeAddressNavDEFLT">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element minOccurs="0" maxOccurs="unbounded" name="PerAddressDEFLT">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element nillable="false" maxOccurs="1" name="addressType">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string" xmlns="">
+                                                                                        <xs:maxLength value="30"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="city">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string" xmlns="">
+                                                                                        <xs:maxLength value="256"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="zipCode">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string" xmlns="">
+                                                                                        <xs:maxLength value="256"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                            <xs:element nillable="true" minOccurs="0" maxOccurs="unbounded" name="countryNav">
+                                                                                <xs:complexType>
+                                                                                    <xs:sequence>
+                                                                                        <xs:element minOccurs="0" maxOccurs="1" name="Territory">
+                                                                                            <xs:complexType>
+                                                                                                <xs:sequence>
+                                                                                                    <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="territoryName">
+                                                                                                        <xs:simpleType>
+                                                                                                            <xs:restriction base="xs:string" xmlns="">
+                                                                                                                <xs:maxLength value="512"/>
+                                                                                                            </xs:restriction>
+                                                                                                        </xs:simpleType>
+                                                                                                    </xs:element>
+                                                                                                </xs:sequence>
+                                                                                            </xs:complexType>
+                                                                                        </xs:element>
+                                                                                    </xs:sequence>
+                                                                                </xs:complexType>
+                                                                            </xs:element>
+                                                                            <xs:element nillable="true" minOccurs="0" maxOccurs="unbounded" name="stateNav">
+                                                                                <xs:complexType>
+                                                                                    <xs:sequence>
+                                                                                        <xs:element minOccurs="0" maxOccurs="1" name="PicklistOption">
+                                                                                            <xs:complexType>
+                                                                                                <xs:sequence>
+                                                                                                    <xs:element type="xs:string" nillable="true" minOccurs="0" maxOccurs="1" name="localeLabel" xmlns=""/>
+                                                                                                </xs:sequence>
+                                                                                            </xs:complexType>
+                                                                                        </xs:element>
+                                                                                    </xs:sequence>
+                                                                                </xs:complexType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element nillable="true" minOccurs="0" maxOccurs="unbounded" name="jobInfoNav">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element minOccurs="0" maxOccurs="unbounded" name="EmpJob">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element nillable="true" minOccurs="0" maxOccurs="unbounded" name="emplStatusNav">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element minOccurs="0" maxOccurs="1" name="PicklistOption">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" nillable="true" minOccurs="0" maxOccurs="1" name="localeLabel" xmlns=""/>
+                                                                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="externalCode">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string" xmlns="">
+                                                                                        <xs:maxLength value="256"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element nillable="false" maxOccurs="1" name="department">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string" xmlns="">
+                                                                <xs:maxLength value="32"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element name="eventReasonNav">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="FOEventReason">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="name" type="xs:string" />
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="eventNav">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="PicklistOption">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="picklistLabels">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="PicklistLabel">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="label" type="xs:string" />
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="externalCode" type="xs:string" />
+                                      <xs:element name="localeLabel" type="xs:string" />
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+<xs:element name="departmentNav">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="FODepartment">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="name" type="xs:string" />
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                                                    <xs:element nillable="false" maxOccurs="1" name="location">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string" xmlns="">
+                                                                <xs:maxLength value="128"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element nillable="false" maxOccurs="1" name="company">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string" xmlns="">
+                                                                <xs:maxLength value="32"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="countryOfCompany">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string" xmlns="">
+                                                                <xs:maxLength value="256"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element nillable="false" maxOccurs="1" name="costCenter">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string" xmlns="">
+                                                                <xs:maxLength value="32"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element type="xs:string" nillable="false" maxOccurs="1" name="eventReason" xmlns=""/>
+                                                    <xs:element type="xs:string" nillable="false" maxOccurs="1" name="event" xmlns=""/>
+                                                    <xs:element nillable="true" minOccurs="0" maxOccurs="unbounded" name="employmentTypeNav">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element minOccurs="0" maxOccurs="1" name="PicklistOption">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" nillable="true" minOccurs="0" maxOccurs="1" name="localeLabel" xmlns=""/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element nillable="true" minOccurs="0" maxOccurs="unbounded" name="contractTypeNav">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element minOccurs="0" maxOccurs="1" name="PicklistOption">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" nillable="true" minOccurs="0" maxOccurs="1" name="localeLabel" xmlns=""/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element nillable="true" minOccurs="0" maxOccurs="unbounded" name="employeeClassNav">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element minOccurs="0" maxOccurs="1" name="PicklistOption">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" nillable="true" minOccurs="0" maxOccurs="1" name="localeLabel" xmlns=""/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element nillable="true" minOccurs="0" maxOccurs="unbounded" name="countryOfCompanyNav">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element minOccurs="0" maxOccurs="1" name="PicklistOption">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" nillable="true" minOccurs="0" maxOccurs="1" name="localeLabel" xmlns=""/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element nillable="true" minOccurs="0" maxOccurs="unbounded" name="customString13Nav">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element minOccurs="0" maxOccurs="1" name="cust_PrimaryMarketOffering">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element nillable="false" maxOccurs="1" name="externalName">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string" xmlns="">
+                                                                                        <xs:maxLength value="128"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element nillable="true" minOccurs="0" maxOccurs="unbounded" name="customString14Nav">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element minOccurs="0" maxOccurs="1" name="cust_SecondaryMarketOffering">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element nillable="false" maxOccurs="1" name="externalName">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string" xmlns="">
+                                                                                        <xs:maxLength value="128"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="customString4Nav">
+                            <xs:complexType>
+                              <xs:sequence minOccurs="0">
+                                <xs:element name="cust_Level">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="externalName" type="xs:string" />
+                                      <xs:element name="lastModifiedBy" type="xs:string" />
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                                                    <xs:element nillable="true" minOccurs="0" maxOccurs="unbounded" name="jobCodeNav">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element minOccurs="0" maxOccurs="1" name="FOJobCode">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="name">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string" xmlns="">
+                                                                                        <xs:maxLength value="90"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element nillable="true" minOccurs="0" maxOccurs="unbounded" name="eventNav">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element minOccurs="0" maxOccurs="1" name="PicklistOption">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" nillable="true" minOccurs="0" maxOccurs="1" name="localeLabel" xmlns=""/>
+                                                                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="externalCode">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string" xmlns="">
+                                                                                        <xs:maxLength value="256"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element nillable="true" minOccurs="0" maxOccurs="unbounded" name="eventReasonNav">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element minOccurs="0" maxOccurs="1" name="FOEventReason">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element nillable="false" maxOccurs="1" name="name">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string" xmlns="">
+                                                                                        <xs:maxLength value="90"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element nillable="true" minOccurs="0" maxOccurs="unbounded" name="companyNav">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element minOccurs="0" maxOccurs="1" name="FOCompany">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="name">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string" xmlns="">
+                                                                                        <xs:maxLength value="90"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element nillable="true" minOccurs="0" maxOccurs="unbounded" name="costCenterNav">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element minOccurs="0" maxOccurs="1" name="FOCostCenter">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="cust_Business">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string" xmlns="">
+                                                                                        <xs:maxLength value="255"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="cust_BusinessArea">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string" xmlns="">
+                                                                                        <xs:maxLength value="255"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="cust_BusinessLine">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string" xmlns="">
+                                                                                        <xs:maxLength value="255"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="cust_BusinessSubLine">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string" xmlns="">
+                                                                                        <xs:maxLength value="255"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="cust_Region">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string" xmlns="">
+                                                                                        <xs:maxLength value="255"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element nillable="true" minOccurs="0" maxOccurs="unbounded" name="locationNav">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element minOccurs="0" maxOccurs="1" name="FOLocation">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element nillable="false" maxOccurs="1" name="name">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string" xmlns="">
+                                                                                        <xs:maxLength value="90"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                            <xs:element nillable="true" minOccurs="0" maxOccurs="unbounded" name="addressNavDEFLT">
+                                                                                <xs:complexType>
+                                                                                    <xs:sequence>
+                                                                                        <xs:element minOccurs="0" maxOccurs="1" name="FOCorporateAddressDEFLT">
+                                                                                            <xs:complexType>
+                                                                                                <xs:sequence>
+                                                                                                    <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="city">
+                                                                                                        <xs:simpleType>
+                                                                                                            <xs:restriction base="xs:string" xmlns="">
+                                                                                                                <xs:maxLength value="256"/>
+                                                                                                            </xs:restriction>
+                                                                                                        </xs:simpleType>
+                                                                                                    </xs:element>
+                                                                                                </xs:sequence>
+                                                                                            </xs:complexType>
+                                                                                        </xs:element>
+                                                                                    </xs:sequence>
+                                                                                </xs:complexType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element type="xs:dateTime" nillable="true" minOccurs="0" maxOccurs="1" name="customDate8" xmlns=""/>
+                                                    <xs:element nillable="false" maxOccurs="1" name="customString4">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string" xmlns="">
+                                                                <xs:maxLength value="128"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element nillable="true" minOccurs="0" maxOccurs="unbounded" name="customString10Nav">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element minOccurs="0" maxOccurs="1" name="cust_subcapability">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="externalName">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string" xmlns="">
+                                                                                        <xs:maxLength value="128"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element nillable="true" minOccurs="0" maxOccurs="unbounded" name="customString9Nav">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element minOccurs="0" maxOccurs="1" name="cust_capability">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="externalName">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string" xmlns="">
+                                                                                        <xs:maxLength value="128"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element nillable="true" minOccurs="0" maxOccurs="unbounded" name="departmentNav">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element minOccurs="0" maxOccurs="1" name="FODepartment">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="name">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string" xmlns="">
+                                                                                        <xs:maxLength value="90"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element nillable="true" minOccurs="0" maxOccurs="unbounded" name="customString23Nav">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element minOccurs="0" maxOccurs="1" name="PicklistOption">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" nillable="true" minOccurs="0" maxOccurs="1" name="localeLabel" xmlns=""/>
+                                                                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="externalCode">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string" xmlns="">
+                                                                                        <xs:maxLength value="256"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element nillable="true" minOccurs="0" maxOccurs="unbounded" name="customString19Nav">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element minOccurs="0" maxOccurs="1" name="PicklistOption">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type="xs:string" nillable="true" minOccurs="0" maxOccurs="1" name="localeLabel" xmlns=""/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element nillable="false" maxOccurs="1" name="personIdExternal">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string" xmlns="">
+                                        <xs:maxLength value="100"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element nillable="false" maxOccurs="1" name="userId">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string" xmlns="">
+                                        <xs:maxLength value="100"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                                <xs:element name="Background_Industry">
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element name="IndustryNav">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                              <xs:element name="PicklistOption">
+                                                                <xs:complexType>
+                                                                  <xs:sequence>
+                                                                    <xs:element name="localeLabel" type="xs:string" />
+                                                                  </xs:sequence>
+                                                                </xs:complexType>
+                                                              </xs:element>
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                        <xs:element name="Industry_2ndNav">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                              <xs:element name="PicklistOption">
+                                                                <xs:complexType>
+                                                                  <xs:sequence>
+                                                                    <xs:element name="localeLabel" type="xs:string" />
+                                                                  </xs:sequence>
+                                                                </xs:complexType>
+                                                              </xs:element>
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                        <xs:element name="userId" type="xs:unsignedInt" />
+                                                        <xs:element name="Sector_2ndNav">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                              <xs:element name="PicklistOption">
+                                                                <xs:complexType>
+                                                                  <xs:sequence>
+                                                                    <xs:element name="localeLabel" type="xs:string" />
+                                                                  </xs:sequence>
+                                                                </xs:complexType>
+                                                              </xs:element>
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                        <xs:element name="SectorNav">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                              <xs:element name="PicklistOption">
+                                                                <xs:complexType>
+                                                                  <xs:sequence>
+                                                                    <xs:element name="localeLabel" type="xs:string" />
+                                                                  </xs:sequence>
+                                                                </xs:complexType>
+                                                              </xs:element>
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                      </xs:sequence>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="assignmentClass">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string" xmlns="">
+                                        <xs:maxLength value="128"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element type="xs:boolean" nillable="true" minOccurs="0" maxOccurs="1" name="isContingentWorker" xmlns=""/>
+                            <xs:element type="xs:boolean" nillable="true" minOccurs="0" maxOccurs="1" name="okToRehire" xmlns=""/>
+                            <xs:element type="xs:dateTime" nillable="false" maxOccurs="1" name="originalStartDate" xmlns=""/>
+                            <xs:element type="xs:boolean" nillable="true" minOccurs="0" maxOccurs="1" name="regretTermination" xmlns=""/>
+                            <xs:element type="xs:dateTime" nillable="false" maxOccurs="1" name="startDate" xmlns=""/>
+                            <xs:element type="xs:dateTime" nillable="false" maxOccurs="1" name="endDate" xmlns=""/>
+                            <xs:element type="xs:dateTime" nillable="false" maxOccurs="1" name="lastDateWorked" xmlns=""/>
+                            <xs:element nillable="true" minOccurs="0" maxOccurs="unbounded" name="empJobRelationshipNav">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element minOccurs="0" maxOccurs="unbounded" name="EmpJobRelationships">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element nillable="false" maxOccurs="1" name="relUserId">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string" xmlns="">
+                                                                <xs:maxLength value="384"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element nillable="true" minOccurs="0" maxOccurs="unbounded" name="relationshipTypeNav">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element minOccurs="0" maxOccurs="1" name="PicklistOption">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element nillable="true" minOccurs="0" maxOccurs="1" name="externalCode">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:string" xmlns="">
+                                                                                        <xs:maxLength value="256"/>
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                            <xs:element type="xs:string" nillable="true" minOccurs="0" maxOccurs="1" name="localeLabel" xmlns=""/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element nillable="true" minOccurs="0" maxOccurs="unbounded" name="relUserNav">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element minOccurs="0" maxOccurs="1" name="firstName">
+																</xs:element>
+																 <xs:element minOccurs="0" maxOccurs="1" name="lastName">
+																 </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element nillable="false" maxOccurs="1" name="relationshipType">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string" xmlns="">
+                                                                <xs:maxLength value="100"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

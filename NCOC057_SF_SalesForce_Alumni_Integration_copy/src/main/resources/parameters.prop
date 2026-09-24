@@ -1,0 +1,35 @@
+#
+#Thu Sep 08 13:03:30 UTC 2022
+MANUAL_LAST_RUN_TIMESTAMP=2022-08-01T00\:00\:00
+FULL_EXTRACT=TRUE
+SF_Authentication=OAuth2SAMLBearer
+Private\ Key\ Alisa=globalscape_qa
+INTERFACE_NAME=NCOC057_SF_SalesForce_Alumni_Integration
+To_Email=bhasanand@deloitte.com
+TIMEZONE=GMT
+Credential_Name=HXM_OAuth2.0
+From_Email=noreply@hxmdev.com
+Mail_Location_ID=HXM2
+Scheduler=<row><cell>dateType</cell><cell></cell></row><row><cell>timeType</cell><cell></cell></row><row><cell>dayValue</cell><cell></cell></row><row><cell>monthValue</cell><cell></cell></row><row><cell>yearValue</cell><cell></cell></row><row><cell>onWeekly</cell><cell></cell></row><row><cell>onMonthly</cell><cell></cell></row><row><cell>OnEveryMinute</cell><cell></cell></row><row><cell>fromInterval</cell><cell></cell></row><row><cell>toInterval</cell><cell></cell></row><row><cell>timeZone</cell><cell>( UTC 0\:00 ) Greenwich Mean Time(Etc/GMT)</cell></row><row><cell>secondValue</cell><cell>0</cell></row><row><cell>minutesValue</cell><cell></cell></row><row><cell>hourValue</cell><cell></cell></row><row><cell>triggerType</cell><cell>simple</cell></row><row><cell>noOfSchedules</cell><cell>1</cell></row><row><cell>schedule1</cell><cell>fireNow\=true</cell></row>
+SFTP_User\ Name=USGlobalScapeHXMSVC
+Subject=EMail Notification from SAP CI-QA \: ${property.INTERFACE_NAME}
+SFTP_FILE_NAME=Salesforce_AlumniRelations_${property.SFTP_DATE_TIME}.csv
+ENABLE_PAYLOAD_LOGGING=TRUE
+Cc_Email=prakhverma@deloitte.com;anakulkarni@deloitte.com;varshshetty@deloitte.com
+Address\ Process\ Direct=/UpdateExecutionManager
+HXM1=HXM1
+Token_Server_Address=https\://test.salesforce.com/services/oauth2/token
+Page\ Size=10000
+Mail_Address=mail.deloitte.com\:9999
+SFTP_ADDRESS=filetransfer1.deloitte.com
+User\ Name=USGlobalScapeHXMSVC
+SFTP_Directory=SIT2/Outbound/Salesforce/Alumni_Relations
+Retry\ on\ Failure=0
+Company=USA,IND
+PERSON_ID_EXTERNAL=
+Address=https\://api55.sapsf.eu
+Address_Create_Bulk_Job=${property.job_id}/services/data/v53.0/jobs/ingest/
+USER_ID=
+SFTP_Authentication=public_key
+Initial\ Run\ Date=2021-08-01T00\:00\:00
+Timeout=10
