@@ -1,0 +1,26 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="Root">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Row" maxOccurs="unbounded" minOccurs="0">
+					<xs:complexType>
+						<xs:choice maxOccurs="unbounded" minOccurs="0">
+							<xs:element type="xs:dateTime" name="Personnelclass_effectiveStartDate"/>
+							<xs:element type="xs:string" name="Personnelclass_externalCode"/>
+							<xs:element type="xs:string" name="Personnelclass_description"/>
+							<xs:element type="xs:string" name="Personnelclass_status"/>
+							<xs:element type="xs:dateTime" name="Personnelclass_lastmodifieddate"/>
+							<xs:element type="xs:dateTime" name="Personneltype_effectiveStartDate"/>
+							<xs:element type="xs:string" name="Personneltype_externalCode"/>
+							<xs:element type="xs:string" name="Personneltype_description"/>
+							<xs:element type="xs:string" name="Personneltype_status"/>
+							<xs:element type="xs:dateTime" name="Personneltype_lastmodifieddate"/>
+							<xs:element type="xs:string" name="Combined_ExternalCode"/>
+							<xs:element type="xs:string" name="Combined_Description"/>
+						</xs:choice>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

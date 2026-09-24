@@ -1,0 +1,22 @@
+#
+#Thu Sep 08 13:12:00 UTC 2022
+cred=
+Directory=/SIT3/Outbound/Synaptica
+To=visahni@deloitte.com
+True=TRUE
+Private\ key\ alias=globalscape_qa
+SF_Address=https\://api55.sapsf.eu
+Subject=Email Notification from SAP CPI-QA \: ${property.INTERFACE_NAME}
+SF_Credentials=HXM_OAuth2.0_T4
+User\ name=USGlobalScapeHXMSVC
+ENABLE_PAYLOAD_LOGGING=TRUE
+Mail=
+Mail\ address=mail.deloitte.com\:9999
+Filename=Synaptica_Costcenter.txt
+SFTP\ Address=filetransfer1.deloitte.com
+interface_name=NCOC081-SF to Synaptica Integration (MF Taxonomy Data)
+Address=/UpdateExecutionManager
+SF_ADDRESS=
+SF_Addresss=
+From=noreply@hxmqa.com
+SF_Authentification=OAuth2SAMLBearer

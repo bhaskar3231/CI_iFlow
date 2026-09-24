@@ -1,0 +1,23 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="Root">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Row" maxOccurs="unbounded" minOccurs="0">
+					<xs:complexType>
+						<xs:choice maxOccurs="unbounded" minOccurs="0">
+						    <xs:element type="xs:string" name="memberfirm_name"/>
+							<xs:element type="xs:dateTime" name="capability_effectiveStartDate"/>
+							<xs:element type="xs:string" name="capability_code"/>
+							<xs:element type="xs:string" name="capability_description"/>
+							<xs:element type="xs:dateTime" name="capability_lastModifiedDateTime"/>
+							<xs:element type="xs:dateTime" name="subcapability_effectiveStartDate"/>
+							<xs:element type="xs:string" name="subcapability_code"/>
+							<xs:element type="xs:string" name="subcapability_description"/>
+							<xs:element type="xs:dateTime" name="subcapability_lastModifiedDateTime"/>
+						</xs:choice>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
