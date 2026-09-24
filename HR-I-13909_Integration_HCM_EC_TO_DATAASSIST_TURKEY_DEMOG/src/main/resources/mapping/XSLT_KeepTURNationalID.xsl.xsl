@@ -1,0 +1,1 @@
+<xsl:stylesheet version="3.0"    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">    <xsl:output method="xml" indent="yes"/>    <xsl:mode on-no-match="shallow-copy"/>    <!-- Remove PerNationalId records where country is not TUR -->    <xsl:template match="PerNationalId[country != 'TUR']"/></xsl:stylesheet>

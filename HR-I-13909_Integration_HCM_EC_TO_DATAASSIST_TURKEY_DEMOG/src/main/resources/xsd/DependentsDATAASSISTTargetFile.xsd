@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Root">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Record" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+            <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Employee_ID"/>
+			<xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Effective_Date_of_the_Dependent"/>
+			<xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Relationship_with_the_Dependent"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Last_Name_of_the_Dependent"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="First_Name_of_the_Dependent"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="TC_ID_of_the_Dependent"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Birthday_of_the_Dependent"/>
+              <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Sex_of_the_Dependent"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Dependent_Education_Level"/>
+			  <xs:element type="xs:string" maxOccurs="1" minOccurs="0" name="Dependent_of_the_Employee"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
