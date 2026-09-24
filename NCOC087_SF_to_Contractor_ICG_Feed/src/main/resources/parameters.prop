@@ -1,0 +1,18 @@
+#
+#Thu Sep 08 13:14:49 UTC 2022
+ENABLE\ PAYLOAD\ LOGGING=TRUE
+Subject=Email Notification from SAP CI-QA \: ${property.INTERFACE_NAME}
+ERROR\ RETRY\ COUNTER\ LIMIT=3
+From=noreply@hxmqa.com
+Address\ Mail=mail.deloitte.com\:9999
+INTERFACE\ NAME=NCOC087 - SF to Contractor ICG Feed
+ENDPOINT\ URL=https\://y2279-iflmap.hcisbp.eu2.hana.ondemand.com/cxf/getContractorFeedData_ICG_QA
+Address=https\://api55.sapsf.eu
+Execution\ Manager=/UpdateExecutionManager
+Credentials=HXM_OAuth2.0_T4
+ICG_Token_Server=https\://login.microsoftonline.com/36da45f1-dd2c-4d1f-af13-5abe46b99921/oauth2/v2.0/token
+ICG_Address=https\://sapiicg.deloitte.com/api/ContractorsFunction
+Location\ ID=HXM2
+CI\ CREDENTIALS=CI_Credential_QA
+SOAP\ SEND\ ADDRESS=/getContractorFeedData_ICG_QA
+To=usconfidentialityprivacyappteam@deloitte.com;varshshetty@deloitte.com

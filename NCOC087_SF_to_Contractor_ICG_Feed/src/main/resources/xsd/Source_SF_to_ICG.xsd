@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="EmpEmployment">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="EmpEmployment" maxOccurs="unbounded" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="lastModifiedDateTime" type="xs:string"/>
+							<xs:element name="endDate" type="xs:string"/>
+							<xs:element name="personIdExternal" type="xs:string"/>
+							<xs:element name="assignmentClass" type="xs:string"/>
+							<xs:element name="isContingentWorker" type="xs:string"/>
+							<xs:element name="userId" type="xs:string"/>
+							<xs:element name="jobInfoNav" maxOccurs="unbounded" minOccurs="0">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="EmpJob" maxOccurs="unbounded" minOccurs="0">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="emplStatus" type="xs:string"/>
+													<xs:element name="emplStatusNav" maxOccurs="unbounded" minOccurs="0">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="PicklistOption" maxOccurs="unbounded" minOccurs="0">
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element name="externalCode" type="xs:string"/>
+																			<xs:element name="localeLabel" type="xs:string"/>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="endDate" type="xs:string"/>
+													<xs:element name="userId" type="xs:string"/>
+													<xs:element name="startDate" type="xs:string"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="startDate" type="xs:string"/>
+							<xs:element name="workOrderNav" maxOccurs="unbounded" minOccurs="0">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="WorkOrder" maxOccurs="unbounded" minOccurs="0">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="workOrderOwnerIdNav" maxOccurs="unbounded" minOccurs="0">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="User" maxOccurs="unbounded" minOccurs="0">
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element name="empInfo" maxOccurs="unbounded" minOccurs="0">
+																				<xs:complexType>
+																					<xs:sequence>
+																						<xs:element name="EmpEmployment" maxOccurs="unbounded" minOccurs="0">
+																							<xs:complexType>
+																								<xs:sequence>
+																									<xs:element name="personIdExternal" type="xs:string"/>
+																									<xs:element name="userId" type="xs:string"/>
+																									<xs:element name="startDate" type="xs:string"/>
+																									<xs:element name="endDate" type="xs:string"/>
+																								</xs:sequence>
+																							</xs:complexType>
+																						</xs:element>
+																					</xs:sequence>
+																				</xs:complexType>
+																			</xs:element>
+																			<xs:element name="userId" type="xs:string"/>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="effectiveEndDate" type="xs:string"/>
+													<xs:element name="workOrderOwnerId" type="xs:string"/>
+													<xs:element name="lastModifiedDateTime" type="xs:string"/>
+													<xs:element name="endDate" type="xs:string"/>
+													<xs:element name="effectiveStartDate" type="xs:string"/>
+													<xs:element name="userSysId" type="xs:string"/>
+													<xs:element name="startDate" type="xs:string"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="lastModifiedOn" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
