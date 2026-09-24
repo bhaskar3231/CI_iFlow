@@ -1,0 +1,34 @@
+#
+#Thu Sep 24 17:14:28 UTC 2026
+0=<row><cell>dateType</cell><cell></cell></row><row><cell>timeType</cell><cell></cell></row><row><cell>dayValue</cell><cell></cell></row><row><cell>monthValue</cell><cell></cell></row><row><cell>yearValue</cell><cell></cell></row><row><cell>onWeekly</cell><cell></cell></row><row><cell>onMonthly</cell><cell></cell></row><row><cell>OnEveryMinute</cell><cell></cell></row><row><cell>fromInterval</cell><cell></cell></row><row><cell>toInterval</cell><cell></cell></row><row><cell>timeZone</cell><cell>( UTC 0\:00 ) Greenwich Mean Time(Etc/GMT)</cell></row><row><cell>secondValue</cell><cell>0</cell></row><row><cell>minutesValue</cell><cell></cell></row><row><cell>hourValue</cell><cell></cell></row><row><cell>triggerType</cell><cell>simple</cell></row><row><cell>noOfSchedules</cell><cell>1</cell></row><row><cell>schedule1</cell><cell>fireNow\=true</cell></row>
+BodyLogging=TRUE
+EMail_Authetication=loginPlain
+EMail_Credential=
+EMail_CredetialName=Email_Credential
+EMail_From=bhasanand@deloitte.com
+EMail_HostPort=xxxx
+EMail_Protection=starttls_mandatory
+EMail_ProxyType=none
+EMail_Subject=Failed to Replicate Employee \: ${property.SAPReferenceID}
+EMail_Timeout=30000
+EMail_To=bhasanand@deloitte.com
+EnableMailNotification=TRUE
+ExceptionLogging=TRUE
+HeaderLogging=TRUE
+InitialQueryDate=2026-01-01T00\:00\:00.000
+PropertyLogging=TRUE
+RecordPerPage=300
+S4HANACloudPrivateKeyAlias=
+S4HANA_Cloud_AllowChunking=1
+S4HANA_Cloud_Authentication=Basic
+S4HANA_Cloud_CredentialName=CPI_TO_S4
+S4HANA_Cloud_Host=http\://dcidhrffsap01.dci.local\:8000
+S4HANA_Cloud_Path=/sap/opu/odata/sap/ZAPI_HR_WORKFORCE_PERSON
+S4HANA_Cloud_ProxyType=sapcc
+S4HANA_Cloud_Timeout=60000
+Timezone=CET
+WorkdayCredential=WORKAY_BASIC
+WorkdayTenant=deloitte_dpt2
+WorkdayURL=wd2-impl-services1.workday.com
+WorkdayVersion=v47.0
+WorkerID=

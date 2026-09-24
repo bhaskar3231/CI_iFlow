@@ -1,0 +1,5 @@
+#Store metainfo properties
+#Thu Sep 24 17:14:27 UTC 2026
+description=Query all changed employee data from Workday and replicate the data to SAP S/4HANA Cloud. The Integration Flow is scheduled to run on a regular basis.
+source=Workday
+target=SAPS4HANACloud
